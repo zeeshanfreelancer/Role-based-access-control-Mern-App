@@ -11,17 +11,15 @@ export default function Dashboard() {
       <Navbar />
       <div className="dashboard">
         <h1>Welcome, {user?.name}</h1>
-        <p>Your role: <strong>{user?.role}</strong></p>
+        <p>Role: <strong>{user?.role}</strong></p>
 
         <div className="dashboard-actions">
-          {user?.role === "admin" && (
+          {user?.role === "admin" ? (
             <>
               <Link className="dash-btn" to="/products">Manage Products</Link>
               <Link className="dash-btn" to="/add-user">Add Manager</Link>
             </>
-          )}
-
-          {user?.role === "manager" && (
+          ) : (
             <Link className="dash-btn" to="/products">View/Edit Products</Link>
           )}
         </div>
@@ -29,3 +27,4 @@ export default function Dashboard() {
     </>
   );
 }
+

@@ -1,16 +1,35 @@
 .dashboard {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
+
+.dashboard h1 {
+  font-size: 26px;
+  color: #333;
+}
+
+.dashboard p {
+  color: #555;
+}
+
 .dashboard-actions {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .dash-btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
   background: #0d6efd;
   color: white;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.dash-btn:hover {
+  background: #0b5ed7;
 }

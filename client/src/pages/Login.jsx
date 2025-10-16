@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import "../styles/Login.css";
 
 export default function Login() {
   const { login } = useAuth();
@@ -11,17 +12,29 @@ export default function Login() {
     e.preventDefault();
     try {
       await login(email, password);
-    } catch (err) {
+    } catch {
       setError("Invalid credentials");
     }
   };
 
   return (
-    <div className="login-page">
-      <h2>Login</h2>
+    <div className="form-container">
+      <h2>Manager Login</h2>
       <form onSubmit={handleSubmit}>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
         <button type="submit">Login</button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
