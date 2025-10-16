@@ -9,7 +9,7 @@ export default function Welcome() {
 
       <div className="welcome-actions">
         <Link className="welcome-btn" to="/signup">Sign up as Admin</Link>
-        <Link className="welcome-btn" to="/login">Login as Manager</Link>
+        <Link className="welcome-btn" to="/login">Login as Admin / Manager</Link>
       </div>
     </div>
   );

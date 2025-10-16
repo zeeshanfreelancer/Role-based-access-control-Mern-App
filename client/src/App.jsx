@@ -6,7 +6,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
-import Register from "./pages/Signup";
+import Register from "./pages/Register";
 import "./index.css";
 
 function RedirectBasedOnRole() {
