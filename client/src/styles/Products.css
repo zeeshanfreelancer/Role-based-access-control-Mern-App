@@ -1,0 +1,28 @@
+.products-page {
+  width: 80%;
+  margin: 40px auto;
+}
+.add-form {
+  margin-bottom: 20px;
+}
+.add-form input {
+  margin-right: 10px;
+  padding: 5px;
+}
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.product-table th {
+  background: #0d6efd;
+  color: white;
+}
+.product-table button {
+  margin-right: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
