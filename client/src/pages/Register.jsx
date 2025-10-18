@@ -33,7 +33,7 @@ export default function Register() {
     setError("");
 
     try {
-      const { data } = await api.post("/users", form); // ✅ backend route for creating user
+      const { data } = await api.post("/users", form); 
       setMessage(`User "${data.name}" created successfully!`);
       setForm({ name: "", email: "", password: "", role: "manager" });
     } catch (err) {
