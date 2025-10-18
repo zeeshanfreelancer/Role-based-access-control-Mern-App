@@ -49,7 +49,7 @@ export default function Signup() {
           onChange={handleChange}
           required
         />
-        <button type="submit">Create Admin</button>
+        <button type="submit" className="signup-button">Create Admin</button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
